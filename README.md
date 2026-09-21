@@ -7,6 +7,28 @@ Site estático responsivo e sem dependências externas obrigatórias.
 ## Abrir localmente
 Abra `index.html` no navegador. A busca, navegação, tema e controles de leitura funcionam localmente. O modo instalável/offline (PWA) passa a funcionar quando o site é servido por HTTPS ou localhost.
 
+## Hospedar
+Você pode enviar **todo o conteúdo desta pasta** para:
+- GitHub Pages
+- Netlify
+- Cloudflare Pages
+- Vercel (site estático)
+- cPanel/FTP de hospedagem comum
+
+Não há etapa de build. O arquivo inicial é `index.html`.
+
+## Atualizar o conteúdo rapidamente
+### Opção A — editar o conteúdo diretamente
+O conteúdo que o site renderiza está em `content/conteudo.js`. É um arquivo de dados gerado a partir do Word.
+
+### Opção B — fluxo recomendado
+1. Edite `fonte/Dossie_Cientifico_Autismo_Estado_da_Arte_1911_2026_Direitos_Educacao_Saude_ECA.docx` no Microsoft Word/LibreOffice.
+2. Tenha Python 3 e o pacote `python-docx` instalados.
+3. Execute `ATUALIZAR_SITE.bat` no Windows.
+4. O script reconstrói `content/conteudo.js` preservando a estrutura de títulos, listas, tabelas e referências.
+
+> O gerador de atualização incluído é intencionalmente simples. Antes de publicar uma nova versão, revise o conteúdo e atualize também a data/versão no documento-fonte.
+
 ## Estrutura
 - `index.html` — interface principal
 - `assets/css/styles.css` — visual responsivo
@@ -37,7 +59,6 @@ Abra `index.html` no navegador. A busca, navegação, tema e controles de leitur
 
 ## Nota
 O site é educacional e não substitui avaliação ou orientação profissional individual.
-Site criado por Bruno César Batista, pai atípico buscando uma forma de entender o universo chamado Autismo.
 
 
 ### Versão 1.2

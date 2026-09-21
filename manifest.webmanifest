@@ -1,0 +1,17 @@
+{
+  "name": "Dossiê Científico do Autismo",
+  "short_name": "Acervo TEA",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7faf9",
+  "theme_color": "#0f766e",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
